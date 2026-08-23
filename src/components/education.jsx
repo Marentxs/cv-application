@@ -38,31 +38,39 @@ function Education(props) {
   if (isEditing === true) {
     content = (
       <div>
-        <p>School Name</p>
-        <input
-          name="schoolName"
-          type="text"
-          value={draftInfo.schoolName}
-          onChange={handleChange}
-        />
+        <form onSubmit={handleSubmitClick}>
+          <p>School Name</p>
+          <input
+            name="schoolName"
+            type="text"
+            value={draftInfo.schoolName}
+            onChange={handleChange}
+            type="text"
+            required
+          />
 
-        <p>Title</p>
-        <input
-          name="title"
-          type="text"
-          value={draftInfo.title}
-          onChange={handleChange}
-        />
+          <p>Title</p>
+          <input
+            name="title"
+            type="text"
+            value={draftInfo.title}
+            onChange={handleChange}
+            type="text"
+            required
+          />
 
-        <p>Date</p>
-        <input
-          name="date"
-          type="text"
-          value={draftInfo.date}
-          onChange={handleChange}
-        />
+          <p>Date</p>
+          <input
+            name="date"
+            type="text"
+            value={draftInfo.date}
+            onChange={handleChange}
+            type="date"
+            required
+          />
 
-        <button onClick={handleSubmitClick}>Submit</button>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     );
   } else {

@@ -27,6 +27,7 @@ function General(props) {
   //Once submit is clicked
 
   function handleSubmitClick() {
+    event.preventDefault();
     props.onSave(draftInfo);
     setIsEditing(false);
   }
@@ -38,20 +39,35 @@ function General(props) {
   if (isEditing === true) {
     content = (
       <div>
-        <p>Name</p>
-        <input name="name" value={draftInfo.name} onChange={handleChange} />
+        <form onSubmit={handleSubmitClick}>
+          <p>Name</p>
+          <input
+            name="name"
+            value={draftInfo.name}
+            onChange={handleChange}
+            type="text"
+            required
+          />
 
-        <p>Email</p>
-        <input name="email" value={draftInfo.email} onChange={handleChange} />
+          <p>Email</p>
+          <input
+            name="email"
+            value={draftInfo.email}
+            onChange={handleChange}
+            type="email"
+            required
+          />
 
-        <p>Phone number</p>
-        <input
-          name="phoneNumber"
-          value={draftInfo.phoneNumber}
-          onChange={handleChange}
-        />
+          <p>Phone number</p>
+          <input
+            name="phoneNumber"
+            value={draftInfo.phoneNumber}
+            onChange={handleChange}
+            required
+          />
 
-        <button onClick={handleSubmitClick}>Submit</button>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     );
   } else {

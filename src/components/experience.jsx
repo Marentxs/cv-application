@@ -38,42 +38,54 @@ function Experience(props) {
   if (isEditing === true) {
     content = (
       <div>
-        <p>Company Name</p>
-        <input
-          name="companyName"
-          value={draftInfo.companyName}
-          onChange={handleChange}
-        />
+        <form onSubmit={handleSubmitClick}>
+          <p>Company Name</p>
+          <input
+            name="companyName"
+            value={draftInfo.companyName}
+            onChange={handleChange}
+            type="text"
+            required
+          />
 
-        <p>Position</p>
-        <input
-          name="position"
-          value={draftInfo.position}
-          onChange={handleChange}
-        />
+          <p>Position</p>
+          <input
+            name="position"
+            value={draftInfo.position}
+            onChange={handleChange}
+            type="text"
+            required
+          />
 
-        <p>Responsabilities</p>
-        <input
-          name="responsabilities"
-          value={draftInfo.responsabilities}
-          onChange={handleChange}
-        />
+          <p>Responsabilities</p>
+          <input
+            name="responsabilities"
+            value={draftInfo.responsabilities}
+            onChange={handleChange}
+            type="text"
+            required
+          />
 
-        <p>Date when you started</p>
-        <input
-          name="startWork"
-          value={draftInfo.startWork}
-          onChange={handleChange}
-        />
+          <p>Date when you started</p>
+          <input
+            name="startWork"
+            value={draftInfo.startWork}
+            onChange={handleChange}
+            type="date"
+            required
+          />
 
-        <p>Date when you stopped</p>
-        <input
-          name="stopWork"
-          value={draftInfo.stopWork}
-          onChange={handleChange}
-        />
+          <p>Date when you stopped</p>
+          <input
+            name="stopWork"
+            value={draftInfo.stopWork}
+            onChange={handleChange}
+            type="date"
+            required
+          />
 
-        <button onClick={handleSubmitClick}>Submit</button>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     );
   } else {
