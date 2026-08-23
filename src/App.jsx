@@ -34,13 +34,18 @@ function App() {
   return (
     <div>
       <div>
-        <General data={generalInfo} onSave={handleSaveGeneral} />
-      </div>
-      <div>
-        <Education data={educationList} onSave={handleEducationGeneral} />
-      </div>
-      <div>
-        <Experience data={educationList} onSave={handleEducationGeneral} />
+        <div>
+          <h2>General Info</h2>
+          <General data={generalInfo} onSave={handleSaveGeneral} />
+        </div>
+        <div>
+          <h2>Education</h2>
+          <Education data={educationList} onSave={handleEducationGeneral} />
+        </div>
+        <div>
+          <h3>Job Experience</h3>
+          <Experience data={educationList} onSave={handleEducationGeneral} />
+        </div>
       </div>
     </div>
   );

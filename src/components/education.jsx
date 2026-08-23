@@ -68,9 +68,9 @@ function Education(props) {
   } else {
     content = (
       <div>
-        <p>{props.data.schoolName}</p>
-        <p>{props.data.title}</p>
-        <p>{props.data.date}</p>
+        <p>School Name:{props.data.schoolName}</p>
+        <p>Title: {props.data.title}</p>
+        <p>Date of Study: {props.data.date}</p>
 
         <button onClick={handleEditClick}>Edit</button>
       </div>

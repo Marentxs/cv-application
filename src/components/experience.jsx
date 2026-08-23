@@ -79,11 +79,11 @@ function Experience(props) {
   } else {
     content = (
       <div>
-        <p>{props.data.companyName}</p>
-        <p>{props.data.position}</p>
-        <p>{props.data.responsabilities}</p>
-        <p>{props.data.startWork}</p>
-        <p>{props.data.stopWork}</p>
+        <p>Company name: {props.data.companyName}</p>
+        <p>Position: {props.data.position}</p>
+        <p>Responsabilities: {props.data.responsabilities}</p>
+        <p>Date when you started working: {props.data.startWork}</p>
+        <p>Date when you stopped working: {props.data.stopWork}</p>
 
         <button onClick={handleEditClick}>Edit</button>
       </div>

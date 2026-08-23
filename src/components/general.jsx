@@ -57,9 +57,9 @@ function General(props) {
   } else {
     content = (
       <div>
-        <p>{props.data.name}</p>
-        <p>{props.data.email}</p>
-        <p>{props.data.phoneNumber}</p>
+        <p>Name: {props.data.name}</p>
+        <p>Email: {props.data.email}</p>
+        <p>Phone Number: {props.data.phoneNumber}</p>
 
         <button onClick={handleEditClick}>Edit</button>
       </div>
