@@ -78,7 +78,7 @@ function Experience(props) {
     );
   } else {
     content = (
-      <div>
+      <div className="info-view">
         <p>Company name: {props.data.companyName}</p>
         <p>Position: {props.data.position}</p>
         <p>Responsabilities: {props.data.responsabilities}</p>

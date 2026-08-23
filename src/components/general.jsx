@@ -56,7 +56,7 @@ function General(props) {
     );
   } else {
     content = (
-      <div>
+      <div className="info-view">
         <p>Name: {props.data.name}</p>
         <p>Email: {props.data.email}</p>
         <p>Phone Number: {props.data.phoneNumber}</p>

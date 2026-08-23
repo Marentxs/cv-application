@@ -31,20 +31,28 @@ function App() {
     setEducationList(newData);
   };
 
+  const handleExperienceGeneral = (newData) => {
+    setExperienceList(newData);
+  };
+
   return (
-    <div>
-      <div>
-        <div>
+    <div id="app">
+      <div id="cv-container">
+        <h1 id="title">CV-Application</h1>
+
+        <div id="general-info" className="component">
           <h2>General Info</h2>
           <General data={generalInfo} onSave={handleSaveGeneral} />
         </div>
-        <div>
+
+        <div id="education" className="component">
           <h2>Education</h2>
           <Education data={educationList} onSave={handleEducationGeneral} />
         </div>
-        <div>
-          <h3>Job Experience</h3>
-          <Experience data={educationList} onSave={handleEducationGeneral} />
+
+        <div id="job-experience" className="component">
+          <h2>Job Experience</h2>
+          <Experience data={experienceList} onSave={handleExperienceGeneral} />
         </div>
       </div>
     </div>

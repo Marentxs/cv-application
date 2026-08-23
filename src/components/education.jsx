@@ -67,7 +67,7 @@ function Education(props) {
     );
   } else {
     content = (
-      <div>
+      <div className="info-view">
         <p>School Name:{props.data.schoolName}</p>
         <p>Title: {props.data.title}</p>
         <p>Date of Study: {props.data.date}</p>

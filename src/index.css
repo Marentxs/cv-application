@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef1f5;
+  color: #20242a;
+}
+
+#app {
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+#cv-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#title {
+  font-size: 36px;
+  margin: 0 0 35px;
+  font-weight: 700;
+}
+
+.component {
+  background: white;
+  padding: 28px;
+  margin-bottom: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.component h2 {
+  margin: 0 0 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.component p {
+  margin: 8px 0 4px;
+  font-weight: 600;
+}
+
+.component .info-view p {
+  margin: 24px 0;
+}
+
+.component input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #d4d9df;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.component input:focus {
+  border-color: #5b6cff;
+  box-shadow: 0 0 0 3px rgba(91, 108, 255, 0.12);
+}
+
+.component button {
+  padding: 11px 22px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 7px;
+  background: #5b6cff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.component button:hover {
+  opacity: 0.9;
+}
+
+#education,
+#job-experience {
+  margin-top: 20px;
+}
