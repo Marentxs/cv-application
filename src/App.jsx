@@ -1,5 +1,6 @@
 import { useState } from "react";
 import General from "./components/general";
+import Education from "./components/education";
 
 function App() {
   const [generalInfo, setGeneralInfo] = useState({
@@ -8,16 +9,29 @@ function App() {
     phoneNumber: "",
   });
 
-  const [educationList, setEducationList] = useState(null);
+  const [educationList, setEducationList] = useState({
+    schoolName: "",
+    title: "",
+    date: "",
+  });
+
   const [experienceList, setExperienceList] = useState(null);
 
   const handleSaveGeneral = (newData) => {
     setGeneralInfo(newData);
   };
+  const handleEducationGeneral = (newData) => {
+    setEducationList(newData);
+  };
 
   return (
     <div>
-      <General data={generalInfo} onSave={handleSaveGeneral} />
+      <div>
+        <General data={generalInfo} onSave={handleSaveGeneral} />
+      </div>
+      <div>
+        <Education data={educationList} onSave={handleEducationGeneral} />
+      </div>
     </div>
   );
 }

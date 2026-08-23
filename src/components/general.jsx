@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function General(props) {
   const [draftInfo, setDraftInfo] = useState(props.data);
-  const [isEditing, setIsEditing] = useState(false);
+  const [isEditing, setIsEditing] = useState(true);
 
   //Logic for input places
 
