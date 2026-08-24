@@ -1,6 +1,8 @@
 # CV Application
 
-🔗 Live Demo: [Add live demo URL here]
+🔗 Live Demo: 
+
+<img width="1740" height="853" alt="image" src="https://github.com/user-attachments/assets/5e47e882-96d0-4df4-bcdc-463c0c79fda6" />
 
 A dynamic CV application built with React that allows users to enter their general information, education, and job experience. The application uses React state and reusable components to manage form data and display a live CV preview.
 
