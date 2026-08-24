@@ -58,36 +58,41 @@ function App() {
 
       <div id="cv-container">
         <h1 id="title">CV-Preview</h1>
-        <div className="preview-component">
-          {generalInfo.name && (
-            <div>
-              <h2>General</h2>
-              <p>{generalInfo.name}</p>
-              <p>{generalInfo.email}</p>
-              <p>{generalInfo.phoneNumber}</p>
-            </div>
-          )}
 
-          {educationList.title && (
-            <div>
-              <h2>Education</h2>
-              <p>{educationList.schoolName}</p>
-              <p>{educationList.title}</p>
-              <p>{educationList.date}</p>
-            </div>
-          )}
+        {(generalInfo.name ||
+          educationList.title ||
+          experienceList.position) && (
+          <div className="preview-component">
+            {generalInfo.name && (
+              <div>
+                <h2>General</h2>
+                <p>{generalInfo.name}</p>
+                <p>{generalInfo.email}</p>
+                <p>{generalInfo.phoneNumber}</p>
+              </div>
+            )}
 
-          {experienceList.position && (
-            <div>
-              <h2>Experience</h2>
-              <p>{experienceList.companyName}</p>
-              <p>{experienceList.position}</p>
-              <p>{experienceList.responsabilities}</p>
-              <p>{experienceList.startWork}</p>
-              <p>{experienceList.stopWork}</p>
-            </div>
-          )}
-        </div>
+            {educationList.title && (
+              <div>
+                <h2>Education</h2>
+                <p>{educationList.schoolName}</p>
+                <p>{educationList.title}</p>
+                <p>{educationList.date}</p>
+              </div>
+            )}
+
+            {experienceList.position && (
+              <div>
+                <h2>Experience</h2>
+                <p>{experienceList.companyName}</p>
+                <p>{experienceList.position}</p>
+                <p>{experienceList.responsabilities}</p>
+                <p>{experienceList.startWork}</p>
+                <p>{experienceList.stopWork}</p>
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
