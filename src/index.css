@@ -11,9 +11,10 @@ body {
 
 #app {
   min-height: 100vh;
-  padding: 50px 40px;
+  padding: 50px 40px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
   gap: 40px;
   justify-content: center;
   align-items: start;
@@ -107,4 +108,25 @@ body {
 
 #cv-container p {
   margin: 8px 0;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  text-align: center;
+  background: white;
+  border-top: 1px solid #d4d9df;
+  padding: 18px 0;
+  margin-left: -40px;
+  margin-right: -40px;
+  margin-bottom: -20px;
+}
+
+.footer a {
+  color: #5b6cff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }

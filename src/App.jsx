@@ -94,6 +94,21 @@ function App() {
           </div>
         )}
       </div>
+
+      <div className="footer">
+        <a
+          href="https://www.theodinproject.com/lessons/node-path-react-new-cv-application"
+          target="_blank"
+        >
+          <span>The Odin Project</span>
+        </a>
+
+        <span> - </span>
+
+        <a href="https://github.com/Marentxs" target="_blank">
+          <span>My Github</span>
+        </a>
+      </div>
     </div>
   );
 }
