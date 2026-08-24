@@ -11,12 +11,16 @@ body {
 
 #app {
   min-height: 100vh;
-  padding: 50px 20px;
+  padding: 50px 40px;
+  display: grid;
+  grid-template-columns: minmax(500px, 900px) minmax(350px, 600px);
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
 }
 
-#cv-container {
-  max-width: 900px;
-  margin: 0 auto;
+#form-container {
+  width: 100%;
 }
 
 #title {
@@ -81,4 +85,26 @@ body {
 #education,
 #job-experience {
   margin-top: 20px;
+}
+
+#cv-container {
+  min-height: 500px;
+}
+
+.preview-component {
+  background: white;
+  padding: 28px;
+  margin-bottom: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+#cv-container h2 {
+  font-size: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #eef1f5;
+}
+
+#cv-container p {
+  margin: 8px 0;
 }

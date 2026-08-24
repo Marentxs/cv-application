@@ -45,7 +45,6 @@ function Education(props) {
             type="text"
             value={draftInfo.schoolName}
             onChange={handleChange}
-            type="text"
             required
           />
 
@@ -55,17 +54,15 @@ function Education(props) {
             type="text"
             value={draftInfo.title}
             onChange={handleChange}
-            type="text"
             required
           />
 
           <p>Date</p>
           <input
             name="date"
-            type="text"
+            type="date"
             value={draftInfo.date}
             onChange={handleChange}
-            type="date"
             required
           />
 
@@ -76,7 +73,7 @@ function Education(props) {
   } else {
     content = (
       <div className="info-view">
-        <p>School Name:{props.data.schoolName}</p>
+        <p>School Name: {props.data.schoolName}</p>
         <p>Title: {props.data.title}</p>
         <p>Date of Study: {props.data.date}</p>
 
