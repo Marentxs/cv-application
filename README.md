@@ -1,6 +1,6 @@
 # CV Application
 
-🔗 Live Demo: 
+🔗 Live Demo: https://cv-application-app.netlify.app/
 
 <img width="1740" height="853" alt="image" src="https://github.com/user-attachments/assets/5e47e882-96d0-4df4-bcdc-463c0c79fda6" />
 
